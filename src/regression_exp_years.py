@@ -282,7 +282,7 @@ def main():
   -----------------------------------Data Preprocessing---------------------------------------
   """
 
-  dataset = pd.read_csv("./dataset/TTSWING.csv")
+  dataset = pd.read_csv("../dataset/TTSWING.csv")
   print( dataset.info() )
 
   # experimental settings
