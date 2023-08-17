@@ -25,6 +25,10 @@ The dataset comprises comprehensive swing information obtained through 9-axis se
 > **Note**
 > In order to safeguard player privacy, we categorized player age, height, weight, and play years into three tiers based on the current data distribution: "high," "medium," and "low." The dataset will be continually updated in the presence of additional data or when the features can be made public.
 
+> **Warning**
+> Due to the player privacy safeguards mentioned above, there might be a difference between the experiment's dataset and the provided dataset.
+> This disparity could potentially result in the experimental code not running successfully.
+
 <details>
   <summary><b>Detail of the attributes</b></summary>
   
