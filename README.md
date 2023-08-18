@@ -1,15 +1,11 @@
-<div align="center">
-  <img src=""><br><br>
-</div>
-
 # TTSWING: a Dataset for Table Tennis Swing Analysis
 
 Che-Yu Chou, Zheng-Hao Chen, Yung-Hoh Sheu, Hung-Hsuan Chen, Sheng K. Wu
 
-The repository contains TTSWING, a novel dataset for table tennis swing analysis, and codes which include four classification and one regression experiments for the work on ["TTSWING: a Dataset for Table Tennis Swing Analysis"](https://arxiv.org/abs/2306.17550) from IJCAI 2023 workshop ([Intelligent Technologies for Precision Sports Science](https://wasn.csie.ncu.edu.tw/workshop/IT4PSS.html)).
+The repository contains TTSWING, a novel dataset for table tennis swing analysis. It also includes the code for the experiments in ["TTSWING: a Dataset for Table Tennis Swing Analysis"](https://arxiv.org/abs/2306.17550) from IJCAI 2023 workshop ([Intelligent Technologies for Precision Sports Science](https://wasn.csie.ncu.edu.tw/workshop/IT4PSS.html)).
 
 ## Citation
-If you used this dataset in your research and want to cite it here is how you do it:
+Please cite our work if you find the dataset or the code useful in your work.
 ```
 @article{chou2023ttswing,
   title={TTSWING: a Dataset for Table Tennis Swing Analysis},
@@ -20,14 +16,14 @@ If you used this dataset in your research and want to cite it here is how you do
 ```
 
 ## Dataset
-The dataset comprises comprehensive swing information obtained through 9-axis sensors integrated into custom-made racket grips, accompanied by anonymized demographic data of the players. The dataset contain more than 90,000 stroke data have been collected. There are current 93 Taiwanese players from Group A participate in the collection process, including 53 males and 40 females. The participants’ age and playing experience ranged widely, from 13 to 28 years old and 1 to 19 years of experience. They were asked to perform at least one of three different swing modes: swinging in the air, full power stroke, and stable hitting , denoted as mode 0 to mode 2, respectively. Each mode requires the participants to swing the racket 50 times continuously to generate a complete waveform set and transform as the tabular data. [You can download here](https://github.com/DEPhantom/DART_project/tree/main/Code/dataset)
+The dataset comprises comprehensive swing information obtained through 9-axis sensors integrated into custom-made racket grips, accompanied by anonymized demographic data of the players. The dataset contains 90,000+ collected stroke data from 93 Taiwanese players in Group A (the elite group). The participants included 53 males and 40 females; their ages ranged between 13 and 28 years old; their years of experience ranged between 1 to 19 years. They were asked to perform at least one of three different swing modes: swinging in the air, full power stroke, and stable hitting, denoted as mode 0 to mode 2, respectively. The participants swing the racket 50 times continuously in each mode to generate a complete waveform set, which is further transformed into tabular data. You can download the dataset [here](https://github.com/DEPhantom/DART_project/tree/main/Code/dataset)
 
 > **Note**
-> In order to safeguard player privacy, we categorized player age, height, weight, and play years into three tiers based on the current data distribution: "high," "medium," and "low." The dataset will be continually updated in the presence of additional data or when the features can be made public.
+> In order to safeguard players' privacy, we categorized player age, height, weight, and play years into three tiers ("high," "medium," and "low") based on the current data distribution. The dataset will be continually updated in the presence of additional data or when the features can be released publicly.
 
 > **Warning**
-> Due to the player privacy safeguards mentioned above, there might be a difference between the experiment's dataset and the provided dataset.
-> This disparity could potentially result in the experimental code not running successfully.
+> Due to the player privacy safeguards mentioned above, there are differences between the released dataset and the experimental dataset we used for experiments.
+> As a result, you may need to adjust the code slightly to run the code on the provided dataset.
 
 <details>
   <summary><b>Detail of the attributes</b></summary>
