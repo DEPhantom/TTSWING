@@ -2,7 +2,7 @@
 
 Che-Yu Chou, Zheng-Hao Chen, Yung-Hoh Sheu, Hung-Hsuan Chen, Sheng K. Wu
 
-The repository contains TTSWING, a novel dataset for table tennis swing analysis. It also includes the code for the experiments in ["TTSWING: a Dataset for Table Tennis Swing Analysis"](https://arxiv.org/abs/2306.17550) from IJCAI 2023 workshop ([Intelligent Technologies for Precision Sports Science](https://wasn.csie.ncu.edu.tw/workshop/IT4PSS.html)).
+The repository contains the TTSWING dataset, a novel dataset for table tennis swing analysis. It also includes the code for the experiments in ["TTSWING: a Dataset for Table Tennis Swing Analysis"](https://arxiv.org/abs/2306.17550) from IJCAI 2023 workshop ([Intelligent Technologies for Precision Sports Science](https://wasn.csie.ncu.edu.tw/workshop/IT4PSS.html)).
 
 ## Citation
 Please cite our work if you find the dataset or the code useful in your work.
@@ -21,47 +21,43 @@ The dataset comprises comprehensive swing information obtained through 9-axis se
 > **Note**
 > In order to safeguard players' privacy, we categorized player age, height, weight, and play years into three tiers ("high," "medium," and "low") based on the current data distribution. The dataset will be continually updated in the presence of additional data or when the features can be released publicly.
 
-> **Warning**
-> Due to the player privacy safeguards mentioned above, there are differences between the released dataset and the experimental dataset we used for experiments.
-> As a result, you may need to adjust the code slightly to run the code on the provided dataset.
-
 <details>
   <summary><b>Detail of the attributes</b></summary>
   
   | Field              | Description |
   |--------------------|-------------|
-  | id                 | A number used to identify players |
-  | date               | The date when the data was collected |
-  | testmode           | Three mode for swing in the air, full power stroke and stable hitting, respectively |
-  | teststage          | This value is only useful when testmode is 1. The value 1 to 3 represent three different ball speeds set by the serving machine |
-  | fileindex          | The round that the player perform the swing |
-  | count              | The number of swings in each round |
-  | ax_mean            | Average value of x-axis acceleration |
-  | ay_mean            | Average value of y-axis acceleration |
-  | az_mean            | Average value of z-axis acceleration |
-  | gx_mean            | Average value of x-axis angular velocity |
-  | gy_mean            | Average value of y-axis angular velocity |
-  | gz_mean            | Average value of z-axis angular velocity |
+  | id                 | An unique ID to identify players |
+  | date               | The data collected date|
+  | testmode           | Three testing modes: swing in the air, full power stroke, and stable hitting, with values 0, 1, and 2 |
+  | teststage          | This value is only useful when testmode is 1. The values 1 to 3 represent three different ball speeds served by the serving machine |
+  | fileindex          | The round that the player performs the swing |
+  | count              | The count of swings in this round |
+  | ax_mean            | The mean of x-axis acceleration |
+  | ay_mean            | The mean of y-axis acceleration |
+  | az_mean            | The mean of z-axis acceleration |
+  | gx_mean            | The mean of x-axis angular velocity |
+  | gy_mean            | The mean of y-axis angular velocity |
+  | gz_mean            | The mean of z-axis angular velocity |
   | ax_var             | The variance of x-axis acceleration |
   | ay_var             | The variance of y-axis acceleration |
   | az_var             | The variance of z-axis acceleration |
   | gx_var             | The variance of x-axis angular velocity |
   | gy_var             | The variance of y-axis angular velocity |
   | gz_var             | The variance of z-axis angular velocity |
-  | ax_rms             | The root mean sqare error of x-axis acceleration |
-  | ay_rms             | The root mean sqare error of y-axis acceleration |
-  | az_rms             | The root mean sqare error of z-axis acceleration |
-  | gx_rms             | The root mean sqare error of x-axis angular velocity |
-  | gy_rms             | The root mean sqare error of y-axis angular velocity |
-  | gz_rms             | The root mean sqare error of z-axis angular velocity |
+  | ax_rms             | The root mean square of x-axis acceleration |
+  | ay_rms             | The root mean square of y-axis acceleration |
+  | az_rms             | The root mean square of z-axis acceleration |
+  | gx_rms             | The root mean square of x-axis angular velocity |
+  | gy_rms             | The root mean square of y-axis angular velocity |
+  | gz_rms             | The root mean square of z-axis angular velocity |
   | a_max              | The maximum value of the square root of the acceleration per swing |
-  | a_mean             | Average of square root of acceleration per swing |
-  | a_min              | Minimum value of square root of acceleration per swing |
+  | a_mean             | The mean of the square root of acceleration per swing |
+  | a_min              | The minimum value of the square root of acceleration per swing |
   | g_max              | The maximum value of the square root of the angular velocity in each swing |
-  | g_mean             | The average of the square root of the angular velocity in each swing |
+  | g_mean             | The mean of the square root of the angular velocity in each swing |
   | g_min              | The minimum value of the square root of the angular velocity in each swing |
-  | a_fft              | The fourier transform of the acceleration |
-  | g_fft              | The fourier transform of the angular velocity |
+  | a_fft              | The Fourier transform of the acceleration |
+  | g_fft              | The Fourier transform of the angular velocity |
   | a_psdx             | The power spectral density of the acceleration |
   | g_psdx             | The power spectral density of the angular velocity |
   | a_kurt             | The kurtosis of the acceleration |
@@ -70,25 +66,25 @@ The dataset comprises comprehensive swing information obtained through 9-axis se
   | g_skewn            | The skewness of the angular velocity |
   | a_entropy          | The spectral entropy of the acceleration |
   | g_entropy          | The spectral entropy of the angular velocity |
-  | gender             | The gender of the player. 1 for male and 0 for female. |
+  | gender             | The gender of the player: 1 for males and 0 for females. |
   | age                | The age of the player |
   | play years         | Number of years players have played ball games |
   | height             | The height of the player |
   | weight             | The weight of the player |
-  | handedness         | Player’s dominant hand. The value 1 for right hand and the valu 0 for left hand |
-  | hold racket handed | The hand holds the racket. The value 1 for right hand and the valu 0 for left hand |
+  | handedness         | Player’s dominant hand: 1 for the right hand; 0 for the left hand |
+  | hold racket handed | The hand holds the racket: 1 for the right hand and 0 for the left hand |
   
 </details>
 
 ## Files
 
-- `classification_gender.py` - The experiment in predicting player's gender.
-- `classification_age.py` - The experiment in predicting player's age.
+- `classification_gender.py` - The experiment in predicting a player's gender.
+- `classification_age.py` - The experiment in predicting a player's age.
 - `classification_mode.py` - The experiment in predicting testmode.
-- `classification_holding.py` - The experiment in predicting player's racket-holding hand.
-- `regression_exp_years.py` - The experiment in predicting player's years of experience.
+- `classification_holding.py` - The experiment in predicting a player's racket-holding hand.
+- `classification_exp_years.py` - The experiment in predicting a player's years of experience.
 - `general_utils.py` - Some general funcitons used in classification experiments.
-- `globals.py` - Global variables for recording experiment result.
+- `globals.py` - Global variables for recording experiment results.
 
 ## Usage
 To execute the code and run experiments, follow these.
@@ -98,18 +94,20 @@ git clone https://github.com/DEPhantom/TTSWING.git
 ```
 Then `cd` into the root and run the command:
 ```Python
-python classification_gender.py
+python classification_<X>.py
 ```
-There is a output file recording experiment result.
+where `<X>` could be `gender`, `age`, `mode`, `holding`, or `exp_years`.
+
+Each script generates an Excel file to summarize the results.
 
 ## Requirements
-If you want to reproduce experiments, please follow these requirements.
-* python==3.9.13
+We tested the codes on Python 3.10.4 with the following libraries.
+* python==3.10.4
 * numpy==1.22.3
 * pandas==1.4.2
-* sklearn==1.0.2
-* tensorflow==2.8.3
-* keras==2.8.0
+* scikit-learn==1.5.1
+* tensorflow==2.13.0
+* keras==2.13.1
 * matplotlib==3.5.2
 * openpyxl==3.0.10
 * tqdm==4.65.0
