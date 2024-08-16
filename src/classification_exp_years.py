@@ -12,13 +12,14 @@ def main():
   # experimental settings
   testmode = 1
   experiment_num = 10
-  label_name = 'age' # change data from here
+  label_name = 'play years' # change data from here
   save_filename = "classification_{0}_result_mode_{1}.xlsx".format(label_name, testmode)
   
   dataset = dataset.loc[dataset.testmode==testmode,]
-  dataset = dataset.drop(['teststage', 'id', 'date', 'fileindex', 'count', 'play years', 'height', 'weight', 'handedness', 'hold racket handed', 'testmode', 'gender'], axis = 1)
+  dataset = dataset.drop(['teststage', 'id', 'date', 'fileindex', 'count', 'height', 'weight', 'handedness', 'hold racket handed', 'testmode', 'gender'], axis = 1)
   #age_encoding(dataset)
   dataset['age'] = dataset['age'].replace({'low': 0, 'medium': 1, 'high': 2})
+  dataset['play years'] = dataset['play years'].replace({'low': 0, 'medium': 1, 'high': 2})
   subdata = dataset.copy() # change data from here
 
   for i in range( experiment_num ):
