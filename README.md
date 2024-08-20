@@ -1,6 +1,6 @@
 # TTSWING: a Dataset for Table Tennis Swing Analysis
 
-Che-Yu Chou, Zheng-Hao Chen, Yung-Hoh Sheu, Hung-Hsuan Chen, Sheng K. Wu
+Che-Yu Chou, Zheng-Hao Chen, Hung-Hsuan Chen, Yung-Hoh Sheu, Min-Te Sun, Sheng K. Wu
 
 The repository contains the TTSWING dataset, a novel dataset for table tennis swing analysis. It also includes the code for the experiments in ["TTSWING: a Dataset for Table Tennis Swing Analysis"](https://arxiv.org/abs/2306.17550) from IJCAI 2023 workshop ([Intelligent Technologies for Precision Sports Science](https://wasn.csie.ncu.edu.tw/workshop/IT4PSS.html)).
 
