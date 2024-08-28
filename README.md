@@ -90,8 +90,7 @@ where `<X>` could be `gender`, `age`, `mode`, `holding`, or `exp_years`.
 Each script generates an Excel file to summarize the results.
 
 ## Requirements
-We tested the codes on Python 3.10.4 with the following libraries.
-* python==3.10.4
+We tested the codes on Python 3.10.4 with the following libraries on Mac.
 * numpy==1.22.3
 * pandas==1.4.2
 * scikit-learn==1.5.1
