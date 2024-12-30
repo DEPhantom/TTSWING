@@ -99,3 +99,9 @@ We tested the codes on Python 3.10.4 with the following libraries on Mac.
 * matplotlib==3.5.2
 * openpyxl==3.0.10
 * tqdm==4.65.0
+
+The packages can be installed by
+
+```sh
+pip install -r requirements.txt
+```
