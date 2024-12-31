@@ -1,4 +1,4 @@
-# TTSWING: a Dataset for Table Tennis Swing Analysis
+# TTSWING: a Dataset for Table Tennis Swing and Racket Kinematics Analysis
 
 Che-Yu Chou, Zheng-Hao Chen, Yung-Hoh Sheu, Hung-Hsuan Chen, Min-Te Sun, Sheng K. Wu
 
