@@ -90,17 +90,7 @@ where `<X>` could be `gender`, `age`, `mode`, `holding`, or `exp_years`.
 Each script generates an Excel file to summarize the results.
 
 ## Requirements
-We tested the codes on Python 3.10.4 with the following libraries on Mac.
-* numpy==1.22.3
-* pandas==1.4.2
-* scikit-learn==1.5.1
-* tensorflow==2.13.0
-* keras==2.13.1
-* matplotlib==3.5.2
-* openpyxl==3.0.10
-* tqdm==4.65.0
-
-The packages can be installed by
+We tested the codes on `Python 3.10.4` (installed by `Conda`) on Mac. Package versions are available in `requirements.txt`, which is generated via `pip freeze > requirements.txt`. To install these packages, runs
 
 ```sh
 pip install -r requirements.txt
