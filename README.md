@@ -89,6 +89,13 @@ where `<X>` could be `gender`, `age`, `mode`, `holding`, or `exp_years`.
 
 Each script generates an Excel file to summarize the results.
 
+To compute statistical summaries of numerical and categorical features, run:
+```Python
+python show_stat.py
+```
+
+It outputs `categorical_stat_summary.csv` and `numerical_stat_summary.csv` in the same folder.
+
 ## Requirements
 We tested the codes on `Python 3.10.4` (installed by `Conda`) on Mac. Package versions are available in `requirements.txt`, which is generated via `pip freeze > requirements.txt`. To install these packages, runs
 
