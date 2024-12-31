@@ -16,11 +16,11 @@ numerical_columns = ['fileindex', 'count', 'ax_mean', 'ay_mean', 'az_mean', 'gx_
 
 # Calculate statistical summary for numerical columns
 statistics = data[numerical_columns].describe()
-output_path = '../output/numerical_stat_summary.csv'
+output_path = './numerical_stat_summary.csv'
 statistics.to_csv(output_path)
 
 
 # Calculate statistical summary for categorical columns
 categorical_summary = data[categorical_columns].describe()
-output_path_categorical = '../output/categorical_stat_summary.csv'
+output_path_categorical = './categorical_stat_summary.csv'
 categorical_summary.to_csv(output_path_categorical)
