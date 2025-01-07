@@ -29,34 +29,34 @@ The dataset comprises comprehensive swing information obtained through 9-axis se
   | gx_mean            | The mean of x-axis angular velocity (unit: LSB/deg/s) |
   | gy_mean            | The mean of y-axis angular velocity (unit: LSB/deg/s) |
   | gz_mean            | The mean of z-axis angular velocity (unit: LSB/deg/s) |
-  | ax_var             | The variance of x-axis acceleration |
-  | ay_var             | The variance of y-axis acceleration |
-  | az_var             | The variance of z-axis acceleration |
-  | gx_var             | The variance of x-axis angular velocity |
-  | gy_var             | The variance of y-axis angular velocity |
-  | gz_var             | The variance of z-axis angular velocity |
-  | ax_rms             | The root mean square of x-axis acceleration |
-  | ay_rms             | The root mean square of y-axis acceleration |
-  | az_rms             | The root mean square of z-axis acceleration |
-  | gx_rms             | The root mean square of x-axis angular velocity |
-  | gy_rms             | The root mean square of y-axis angular velocity |
-  | gz_rms             | The root mean square of z-axis angular velocity |
-  | a_max              | The maximum acceleration of a swing |
-  | a_mean             | The mean of acceleration of a swing |
-  | a_min              | The minimum acceleration of a swing |
-  | g_max              | The maximum angular velocity of a swing |
-  | g_mean             | The mean angular velocity of a swing |
-  | g_min              | The minimum angular velocity of a swing |
-  | a_fft              | The Fourier transform of the acceleration |
-  | g_fft              | The Fourier transform of the angular velocity |
-  | a_psdx             | The power spectral density of the acceleration |
-  | g_psdx             | The power spectral density of the angular velocity |
-  | a_kurt             | The kurtosis of the acceleration |
-  | g_kurt             | The kurtosis of the angular velocity |
-  | a_skewn            | The skewness of the acceleration |
-  | g_skewn            | The skewness of the angular velocity |
-  | a_entropy          | The spectral entropy of the acceleration |
-  | g_entropy          | The spectral entropy of the angular velocity |
+  | ax_var             | The variance of x-axis acceleration (unit: the square of LSB/G) |
+  | ay_var             | The variance of y-axis acceleration (unit: the square of LSB/G) |
+  | az_var             | The variance of z-axis acceleration (unit: the square of LSB/G) |
+  | gx_var             | The variance of x-axis angular velocity (unit: the square of LSB/deg/s) |
+  | gy_var             | The variance of y-axis angular velocity (unit: the square of LSB/deg/s) |
+  | gz_var             | The variance of z-axis angular velocity (unit: the square of LSB/deg/s) |
+  | ax_rms             | The root mean square of x-axis acceleration (unit: LSB/G) |
+  | ay_rms             | The root mean square of y-axis acceleration (unit: LSB/G) |
+  | az_rms             | The root mean square of z-axis acceleration (unit: LSB/G) |
+  | gx_rms             | The root mean square of x-axis angular velocity (unit: LSB/deg/s) |
+  | gy_rms             | The root mean square of y-axis angular velocity (unit: LSB/deg/s) |
+  | gz_rms             | The root mean square of z-axis angular velocity (unit: LSB/deg/s) |
+  | a_max              | The maximum acceleration of a swing (unit: LSB/G) |
+  | a_mean             | The mean of acceleration of a swing (unit: LSB/G) |
+  | a_min              | The minimum acceleration of a swing (unit: LSB/G) |
+  | g_max              | The maximum angular velocity of a swing (unit: LSB/deg/s) |
+  | g_mean             | The mean angular velocity of a swing (unit: LSB/deg/s) |
+  | g_min              | The minimum angular velocity of a swing (unit: LSB/deg/s) |
+  | a_fft              | The Fourier transform of the acceleration (unit: LSB/G) |
+  | g_fft              | The Fourier transform of the angular velocity (unit: LSB/deg/s) |
+  | a_psdx             | The power spectral density of the acceleration (unit: (LSB/G)^2/Hz) |
+  | g_psdx             | The power spectral density of the angular velocity (unit: (LSB/deg/s)^2/Hz) |
+  | a_kurt             | The kurtosis of the acceleration (no unit) |
+  | g_kurt             | The kurtosis of the angular velocity (no unit) |
+  | a_skewn            | The skewness of the acceleration (no unit) |
+  | g_skewn            | The skewness of the angular velocity (no unit) |
+  | a_entropy          | The spectral entropy of the acceleration (no unit) |
+  | g_entropy          | The spectral entropy of the angular velocity (no unit) |
   | gender             | The gender of the player: 1 for males and 0 for females. |
   | age                | The age of the player: high/medium/low |
   | play years         | Number of years players have played ball games: high/medium/low |
