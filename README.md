@@ -23,12 +23,12 @@ The dataset comprises comprehensive swing information obtained through 9-axis se
   | teststage          | This value is only useful when testmode is 1. The values 1 to 3 represent three different ball speeds served by the serving machine |
   | fileindex          | The round that the player performs the swing |
   | count              | The count of swings in this round |
-  | ax_mean            | The mean of x-axis acceleration |
-  | ay_mean            | The mean of y-axis acceleration |
-  | az_mean            | The mean of z-axis acceleration |
-  | gx_mean            | The mean of x-axis angular velocity |
-  | gy_mean            | The mean of y-axis angular velocity |
-  | gz_mean            | The mean of z-axis angular velocity |
+  | ax_mean            | The mean of x-axis acceleration (unit: LSB/G) |
+  | ay_mean            | The mean of y-axis acceleration (unit: LSB/G) |
+  | az_mean            | The mean of z-axis acceleration (unit: LSB/G) |
+  | gx_mean            | The mean of x-axis angular velocity (unit: LSB/deg/s) |
+  | gy_mean            | The mean of y-axis angular velocity (unit: LSB/deg/s) |
+  | gz_mean            | The mean of z-axis angular velocity (unit: LSB/deg/s) |
   | ax_var             | The variance of x-axis acceleration |
   | ay_var             | The variance of y-axis acceleration |
   | az_var             | The variance of z-axis acceleration |
@@ -41,12 +41,12 @@ The dataset comprises comprehensive swing information obtained through 9-axis se
   | gx_rms             | The root mean square of x-axis angular velocity |
   | gy_rms             | The root mean square of y-axis angular velocity |
   | gz_rms             | The root mean square of z-axis angular velocity |
-  | a_max              | The maximum value of the square root of the acceleration per swing |
-  | a_mean             | The mean of the square root of acceleration per swing |
-  | a_min              | The minimum value of the square root of acceleration per swing |
-  | g_max              | The maximum value of the square root of the angular velocity in each swing |
-  | g_mean             | The mean of the square root of the angular velocity in each swing |
-  | g_min              | The minimum value of the square root of the angular velocity in each swing |
+  | a_max              | The maximum acceleration of a swing |
+  | a_mean             | The mean of acceleration of a swing |
+  | a_min              | The minimum acceleration of a swing |
+  | g_max              | The maximum angular velocity of a swing |
+  | g_mean             | The mean angular velocity of a swing |
+  | g_min              | The minimum angular velocity of a swing |
   | a_fft              | The Fourier transform of the acceleration |
   | g_fft              | The Fourier transform of the angular velocity |
   | a_psdx             | The power spectral density of the acceleration |
