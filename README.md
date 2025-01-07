@@ -13,6 +13,8 @@ The dataset comprises comprehensive swing information obtained through 9-axis se
 <details>
   <summary><b>Detail of the attributes</b></summary>
   
+  The unit of the accelerations (e.g., ax_mean, ay_mean, az_mean) is LSB/G (least significant bit per unit of G-force). By multiplying this value by 2/32768, the original G value can be obtained. The unit of angular velocities (e.g., gx_mean, gy_mean, gz_mean) is LSB/deg/s (least significant bit per unit of angular velocity). By multiplying this value by 250/32768, the original DPS (degree per second) can be obtained.
+  
   | Field              | Description |
   |--------------------|-------------|
   | id                 | An unique ID to identify players |
