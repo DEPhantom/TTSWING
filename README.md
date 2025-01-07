@@ -58,10 +58,10 @@ The dataset comprises comprehensive swing information obtained through 9-axis se
   | a_entropy          | The spectral entropy of the acceleration |
   | g_entropy          | The spectral entropy of the angular velocity |
   | gender             | The gender of the player: 1 for males and 0 for females. |
-  | age                | The age of the player |
-  | play years         | Number of years players have played ball games |
-  | height             | The height of the player |
-  | weight             | The weight of the player |
+  | age                | The age of the player: high/medium/low |
+  | play years         | Number of years players have played ball games: high/medium/low |
+  | height             | The height of the player: high/medium/low |
+  | weight             | The weight of the player: high/medium/low |
   | handedness         | Player’s dominant hand: 1 for the right hand; 0 for the left hand |
   | hold racket handed | The hand holds the racket: 1 for the right hand and 0 for the left hand |
   
