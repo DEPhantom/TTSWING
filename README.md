@@ -104,8 +104,3 @@ We tested the codes on `Python 3.10.4` (installed by `Conda`) on Mac. Package ve
 ```sh
 pip install -r requirements.txt
 ```
-
-## Change log
-
-### 2025/2/6
-- Updated the README.md to clarify that the dataset includes pilot studies demonstrating its value.
