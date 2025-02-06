@@ -87,7 +87,7 @@ Then `cd` into the root and run the command:
 ```Python
 python classification_<X>.py
 ```
-where `<X>` could be `gender`, `age`, `mode`, `holding`, or `exp_years`.
+where `<X>` could be `gender`, `age`, `mode`, `holding`, or `exp_years`. These scripts predict `gender`, `age`, `mode`, `holding`, or `exp_years` based on the derived features.
 
 Each script generates an Excel file to summarize the results.
 
