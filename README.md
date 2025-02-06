@@ -2,7 +2,7 @@
 
 Che-Yu Chou, Zheng-Hao Chen, Yung-Hoh Sheu, Hung-Hsuan Chen, Min-Te Sun, Sheng K. Wu
 
-The repository contains the TTSWING dataset, a novel dataset for table tennis swing analysis. It also includes the code for the experiments on the dataset.
+The repository contains the TTSWING dataset, a novel dataset for table tennis swing analysis. It also includes the code for the pilot studies to demonstrate the value of our dataset. In particular, we predict user personal information, such as gender, age, racket-holding hand, and years of experience playing table tennis, based on the features derived from the waveforms.
 
 ## Dataset
 The dataset comprises comprehensive swing information obtained through 9-axis sensors integrated into custom-made racket grips, accompanied by anonymized demographic data of the players. The dataset contains 90,000+ collected stroke data from 93 Taiwanese players in Group A (the elite group). The participants included 53 males and 40 females; their ages ranged between 13 and 28 years old; their years of experience ranged between 1 to 19 years. They were asked to perform at least one of three different swing modes: swinging in the air, full power stroke, and stable hitting, denoted as mode 0 to mode 2, respectively. The participants swing the racket 50 times continuously in each mode to generate a complete waveform set, which is further transformed into tabular data. You can download the dataset [here](https://github.com/DEPhantom/TTSWING/blob/main/dataset/TTSWING.csv)
